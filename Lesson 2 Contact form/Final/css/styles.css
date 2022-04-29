@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --color-white: #ffffff;
+  --color-purple: purple;
+  --color-blue: skyblue;
+  --font-poppins: "Poppins", sans-serif;
+  --color-gray: #d1d5db;
+}
+/* BROWSER RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: var(--font-poppins);
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to right, var(--color-blue), var(--color-purple));
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper {
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 30vw;
+  height: 95vh;
+}
+.contact-form {
+  padding: 1rem;
+  width: 100%;
+  /* background-color: blue; */
+}
+.form-title {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.form-control {
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  width: 80%;
+  border-bottom: 1px solid var(--color-gray);
+}
+.form-control textarea {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  width: 80%;
+  border-bottom: 1px solid var(--color-gray);
+  height: 35px;
+}
+button {
+  padding: 12px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  background: linear-gradient(to right, var(--color-blue), var(--color-purple));
+  width: 60%;
+  border: none;
+  color: var(--color-white);
+  border-radius: 50px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s;
+}
+button:hover {
+  background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+}
+svg {
+  color: var(--color-white);
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
