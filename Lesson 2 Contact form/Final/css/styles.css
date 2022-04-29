@@ -85,3 +85,16 @@ svg {
   height: 20px;
   margin-left: 10px;
 }
+select > option:hover,
+option:checked {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: white;
+  background-color: purple;
+  /* background: linear-gradient(to right, var(--color-purple), var(--color-blue)); */
+  /* background: green repeat url("data:image/gif;base64,R0lGO..."); */
+}
+/* select:focus > option:checked {
+  background: #000 !important;
+} */
