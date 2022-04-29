@@ -98,3 +98,6 @@ option:checked {
 /* select:focus > option:checked {
   background: #000 !important;
 } */
+textarea {
+  resize: none;
+}
