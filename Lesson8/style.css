@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: whitesmoke;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+img {
+  width: 50%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+.left {
+  width: 40%;
+}
+.right {
+  width: 60%;
+}
+.title {
+  font-size: 4rem;
+}
+/* 
+BREAKPOINS
+576px 
+768PX
+992px  Normal Laptop
+1200px
+*/
+/* tablet */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .container {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+/* phone */
+@media screen and (max-width: 576px) {
+  body {
+    background-color: red;
+  }
+  img {
+    display: none;
+  }
+}
+
+/* huge desktop */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: blue;
+  }
+}
