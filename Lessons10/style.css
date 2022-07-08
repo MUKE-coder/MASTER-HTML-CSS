@@ -1,0 +1,80 @@
+/* Browser reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 100px;
+  background-color: black;
+}
+main {
+  height: 100vh;
+  display: flex;
+  background-color: whitesmoke;
+}
+aside {
+  width: 10vw;
+  background-color: blue;
+}
+.main-content {
+  width: 90vw;
+  overflow-x: hidden;
+}
+.button-tabs {
+  height: 80px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+.video-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.video-cards .card {
+  width: 24%;
+  margin-bottom: 20px;
+  border: 0.5px solid #888;
+  padding: 10px;
+}
+.channel-logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+.video-duration {
+  margin-top: -30px;
+  text-align: right;
+  margin-right: 15px;
+}
+.channel-description {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+.channel-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.6rem;
+  color: #777;
+}
+.video-title {
+  font-size: 1rem;
+  color: #222;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  body {
+    background-color: aquamarine;
+  }
+}
