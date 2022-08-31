@@ -1,0 +1,71 @@
+/* GLOBAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 5rem 2rem;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.text-white {
+  color: white;
+}
+.rounded-sm {
+  border-radius: 10px;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+.text-red {
+  color: red;
+}
+.text-dark {
+  color: black;
+}
+
+.section-hero {
+  background-color: black;
+}
+.bg-red {
+  background-color: red;
+}
+.col-6 {
+  width: 45%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.section-heading {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+@media screen and (max-width: 650px) {
+  .flex {
+    flex-direction: column;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
