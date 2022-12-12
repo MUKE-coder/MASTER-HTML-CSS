@@ -1,0 +1,150 @@
+:root {
+  --color-violet: rgb(70, 3, 70);
+  --color-white: white;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+section {
+  padding: 5rem;
+  width: 80vw;
+  margin: 0 auto;
+  /* height: 100vh; */
+}
+.section-image {
+  width: 100%;
+  padding: 2rem 0;
+}
+.section-image img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+section h2 {
+  font-size: 3rem;
+}
+
+section:nth-child(even) {
+  background-color: bisque;
+}
+section:nth-child(odd) {
+  background-color: darkblue;
+  color: white;
+}
+input[type="checkbox"],
+.humberg-icon {
+  display: none;
+}
+.section-label {
+  font-size: 1.5rem;
+  background-color: #ccc;
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  font-weight: bolder;
+  border: 2px solid black;
+  position: sticky;
+  top: 20%;
+}
+section p {
+  line-height: 1.5;
+}
+/* Global styles */
+/* header styles */
+header {
+  display: flex;
+  background-color: var(--color-violet);
+  color: var(--color-white);
+  height: 80px;
+  align-items: center;
+  padding: 0 5rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+header a {
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+.logo {
+  font-size: 2.5rem;
+  color: antiquewhite;
+}
+.humberg-icon {
+  font-size: 1.6rem;
+}
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.social-links i {
+  color: red;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+/* header styles */
+button {
+  padding: 0.8rem 3.5rem;
+  font-size: 22px;
+  margin: 1rem 0;
+}
+.section-1 {
+  background-color: antiquewhite;
+  padding-top: 9rem;
+}
+/* footer */
+footer {
+  height: 80px;
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="checkbox"],
+  .humberg-icon {
+    display: block;
+  }
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom: 30%;
+  }
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    top: 80px;
+    right: -50%;
+    background-color: rgb(107, 2, 226);
+    transform: scale(0.3);
+    padding: 1rem 3rem;
+    transition: all 0.5s ease-in;
+  }
+  input[type="checkbox"] {
+    transform: scale(0.1) translate(100px);
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    right: 0;
+    transform: scale(1);
+  }
+}
